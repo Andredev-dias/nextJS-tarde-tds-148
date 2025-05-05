@@ -1,0 +1,33 @@
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: rgb(97, 97, 97);
+    opacity: 0.8;
+    font-weight: 900;
+    margin-right: 0.5rem;
+   
+}
+
+.nav-link::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(251, 192, 45), rgb(181, 36, 36), rgb(17, 17, 109));
+    transition: width 1.0s ease-in-out;
+}
+
+
+.nav-link:hover::after{
+    width: 100%;
+}
+   
+
+  .nav-link:hover{
+    opacity: 1.0;
+}
